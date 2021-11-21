@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class operators {
+    public static double operation(double a, double b, char c){
+        double result=0;
+        if(c=='1'){
+            result=a+b;
+        }
+        else if(c=='2'){
+            result=a-b;
+        }
+        else if(c=='3'){
+            result = a/b;
+        }
+        else if(c=='4'){
+            result=a*b;
+        }
+        else if(c=='5'){
+            result=a%b;
+        }
+        else{
+            System.out.println("entered the invalid input plz enter valid input");
+        }
+        return result;
+    }
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the 1st value: ");
+        double a=s.nextInt();
+        System.out.println("Enter the 2nd value: ");
+        double b=s.nextInt();
+        System.out.println("\n1.Sum \n2.Subtraction \n3.Division \n4. multification\n5.modulus");
+        System.out.println("\nenter your choice 1/2/3/4/5");
+        char c= s.next().charAt(0);
+        double result =operation(a,b,c);
+        System.out.println("result is"+result);
+        s.close();
+    }
+
+}
