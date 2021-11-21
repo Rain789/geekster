@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class methods {
+    int multi(int a, int b){
+        return a*b;
+    }
+    float multi(float a , float b){
+        return a*b;
+    }
+    long multi(long a , long b){
+        return a*b;
+    }
+    public static void main(String[] args){
+        methods obj = new methods();
+        int x= obj.multi(6,7);
+        float y =obj.multi(6.8f,7.9f);
+        long z =obj.multi(4556,76532897);
+        System.out.println("multiply method : return integer value : "+x);
+        System.out.println("multiply method : return integer value : "+y);
+        System.out.println("multiply method : return integer value : "+z);
+    }
+    
+}
