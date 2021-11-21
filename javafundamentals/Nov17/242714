@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class courses {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the your branch name: CSE, ECE, MECH");
+        String branch = s.nextLine();
+        System.out.println("Enter the year:");
+        int year = s.nextInt();
+        System.out.println("\nCourses");
+        if(year==1){
+            System.out.println("Courses are Maths, English, Science");
+        }
+        else if(year==2){
+            switch(branch){
+                case "CSE":
+                System.out.println("Courses are Operating system, java, Data Structure");
+                break;
+                case "ECE":
+                System.out.println("Courses are Micro processor, Logic switching theory");
+                break;
+                case "MECH":
+                System.out.println("Courses are Drawing, Manufacturing Machines");
+                break;
+                default:
+                System.out.println("Invalid INput");
+            }
+        }
+        else if(year==3){
+            switch(branch){
+                case "CSE":
+                System.out.println("Courses are Computer organization, multimedia");
+                break;
+                case "ECE":
+                System.out.println("Courses are Fundamentals of logic design, micrioelectronics");
+                break;
+                case "MECH":
+                System.out.println("Courses are Internal combustion engine, Mechanics");
+                break;
+                default:
+                System.out.println("Invalid INput");
+            }
+
+        }
+        else if(year==4){
+            switch(branch){
+                case "CSE":
+                System.out.println("Courses are Datacomunication and network,Multimedia");
+                break;
+                case "ECE":
+                System.out.println("Courses are Embede system, Image processing");
+                break;
+                case "MECH":
+                System.out.println("Courses are Production technology, Thermal engineering");
+                break;
+                default:
+                System.out.println("Invalid INput");
+            }
+        }
+        else{
+            System.out.println("Enter the yare between 1 to 4");
+            s.close();
+        }
+    }
+}
