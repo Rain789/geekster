@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class multiplyfunction {
+    
+    public int multiplyfunction(int a,int b){
+        return a*b;
+    }
+    public static void main(String[] args){
+        Scanner s =new Scanner(System.in);
+        System.out.println("enter the first number");
+        int x =s.nextInt();
+        System.out.println("enter the 2nd number");
+        int y =s.nextInt();
+        multiplyfunction obj = new multiplyfunction();
+        int z = obj.multiplyfunction(x,y);
+        System.out.println("multiply method : return integer value : "+z);
+        s.close();
+    }
+}
