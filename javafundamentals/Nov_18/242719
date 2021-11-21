@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class twoternaryop {
+    public static void main(String[] args) {
+        // Scanner S= new Scanner(System.in);
+        // System.out.println("enter the 1st value");
+        // int a = s.nextInt();
+        // System.out.println("Enter the 2nd value");
+        // int b= s.nextINt();
+        int a=49, b=35;
+        String result = (a>b)?"a is greater":"b is greater";
+        System.out.println(result);
+    
+    }
+    
+}

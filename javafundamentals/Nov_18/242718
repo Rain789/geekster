@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class GREATESTThreeNUMTERNARYOP {
+    public static void main(String[] args) {
+        // Scanner S= new Scanner(System.in);
+        // System.out.println("enter the 1st value");
+        // int a = s.nextInt();
+        // System.out.println("Enter the 2nd value");
+        // int b= s.nextINt();
+        int a=7, b=45, c=86;
+        String D = (a>b)?(a>c)?"a is greater":"c is greater":(b>c)?"b is greater":"c is greater";
+        System.out.println(D);
+    
+    }
+    
+}
